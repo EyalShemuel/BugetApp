@@ -138,8 +138,8 @@ backend:
     needs_retesting: false
     status_history:
       - working: true
-        agent: "main"
-        comment: "Categories API implemented with default Hebrew categories, tested successfully"
+        agent: "testing"
+        comment: "Categories API tested successfully with 8 Hebrew categories"
         
   - task: "Statistics API endpoints"
     implemented: true
