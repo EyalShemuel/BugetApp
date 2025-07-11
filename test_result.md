@@ -119,15 +119,18 @@ backend:
         
   - task: "Transactions CRUD API"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented create, read, update, delete transactions with MongoDB storage"
+      - working: true
+        agent: "testing"
+        comment: "All CRUD operations tested successfully. Created 3 test transactions, retrieved list, updated transaction amount from 5000 to 5500, and deleted transaction. Pagination and error handling (404 for invalid IDs, 422 for invalid data) working correctly. Data persistence verified with MongoDB."
         
   - task: "Categories API"
     implemented: true
