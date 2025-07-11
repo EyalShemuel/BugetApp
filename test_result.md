@@ -270,12 +270,9 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Transactions CRUD API"
     - "Transaction form"
-    - "Statistics API endpoints"
-    - "Gemini AI Integration"
     - "AI chat interface"
-    - "Household comparison API"
+    - "Household comparison view"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
