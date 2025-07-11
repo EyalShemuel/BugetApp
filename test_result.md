@@ -176,15 +176,18 @@ backend:
         
   - task: "Household comparison API"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "medium"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Household comparison endpoint implemented with simulated data"
+      - working: true
+        agent: "testing"
+        comment: "Household comparison endpoint working correctly. Returns proper JSON structure with user_data, average_household, and category_comparison sections. Calculates user's current month data and compares against simulated average household data (avg income: 15000, expenses: 12000, savings rate: 20%). Category comparisons include Hebrew categories like מזון, דיור, תחבורה, בילויים, בריאות."
 
 frontend:
   - task: "Main App component structure"
