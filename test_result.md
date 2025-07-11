@@ -125,12 +125,9 @@ backend:
     priority: "high"
     needs_retesting: false
     status_history:
-      - working: "NA"
-        agent: "main"
-        comment: "Implemented create, read, update, delete transactions with MongoDB storage"
       - working: true
         agent: "testing"
-        comment: "All CRUD operations tested successfully. Created 3 test transactions, retrieved list, updated transaction amount from 5000 to 5500, and deleted transaction. Pagination and error handling (404 for invalid IDs, 422 for invalid data) working correctly. Data persistence verified with MongoDB."
+        comment: "All CRUD operations tested and working - create, read, update, delete with proper error handling"
         
   - task: "Categories API"
     implemented: true
