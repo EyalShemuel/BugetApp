@@ -161,12 +161,9 @@ backend:
     priority: "high"
     needs_retesting: false
     status_history:
-      - working: "NA"
-        agent: "main"
-        comment: "AI chat endpoint implemented with Gemini 2.5 flash integration, requires API key"
       - working: true
         agent: "testing"
-        comment: "AI chat endpoint working correctly. Returns appropriate Hebrew message about missing API key as expected: 'מפתח API של Gemini לא הוגדר. אנא הגדר את המפתח בהגדרות כדי לקבל תובנות AI מתקדמות על התקציב שלך.' Endpoint handles requests properly and provides user-friendly error messaging."
+        comment: "AI chat endpoint tested successfully, returns appropriate message about missing API key"
         
   - task: "Household comparison API"
     implemented: true
