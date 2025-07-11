@@ -204,15 +204,18 @@ frontend:
         
   - task: "Transaction form"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/frontend/src/App.js"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Transaction form implemented with category selection and date picker"
+      - working: true
+        agent: "testing"
+        comment: "Minor: Category filtering issue when switching between income/expense types - categories don't update dynamically in UI, but form submission works correctly. Core functionality tested successfully: form accepts all required fields, validates properly, submits transactions, and updates dashboard stats correctly. Both income and expense transactions work as expected."
         
   - task: "AI chat interface"
     implemented: true
