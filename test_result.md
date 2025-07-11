@@ -146,15 +146,18 @@ backend:
         
   - task: "Statistics API endpoints"
     implemented: true
-    working: "NA"
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: "NA"
         agent: "main"
         comment: "Implemented monthly stats, category stats, and summary endpoints"
+      - working: true
+        agent: "testing"
+        comment: "All statistics endpoints tested successfully. Monthly stats aggregation working with 1 month of data found. Category stats showing 2 categories with transaction data. Summary stats returning all required fields (total_income: 5500, total_expenses: 350, balance: 5150, total_transactions: 2). All endpoints returning proper JSON structure."
         
   - task: "Gemini AI Integration"
     implemented: true
